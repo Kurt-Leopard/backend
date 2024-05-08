@@ -9,7 +9,8 @@
     "routes":[
         {
         "src" : "/(.*)",
-        "dest":"/index.mjs"
+        "dest":"/",
+        "methods":["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
         }
     ]
 }
