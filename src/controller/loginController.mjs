@@ -1,4 +1,4 @@
-const bcrypt = require('bcrypt');
+import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import { loginModel, ChangeUserPasswordModel, verificationCodeModel, verifyCodeModel, newPasswordModel } from '../model/loginModel.mjs';
 import { main } from '../utils/email.mjs';
