@@ -21,7 +21,7 @@ async function sendEmail(toEmail,code) {
         console.log('Email sent successfully to ' + toEmail + '! Message ID: ', info.messageId);
     } catch (error) {
         console.error('Error occurred:', error.message);
-        throw new Error('Email sending failed'); // Throw an error to stop the program
+        throw new Error('Email sending failed'); 
     }
 }
 
