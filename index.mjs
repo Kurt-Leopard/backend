@@ -10,11 +10,11 @@ import { router as spotifyRoutes } from './src/routes/spotifyRoutes.mjs';
 dotenv.config();
 
 const app = express();
-const port=process.env.SERVER_PORT;
+const port=process.env.SERVER_PORT || 3000;
 const corsConfig={
     origin:"*",
     credential:true,
-    methods:["GET","POST","PUT","DELETE"]
+    methods:["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
 }
 app.use(express.json());
 app.options("",cors(corsConfig));
