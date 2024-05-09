@@ -1,5 +1,6 @@
 # Ignore node_modules directory
 node_modules/
+/var/task/node_modules/bcrypt/lib/binding/napi-v3/bcr
 
 # Ignore .env files
 .env
