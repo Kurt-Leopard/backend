@@ -2,7 +2,7 @@ import multer from 'multer';
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, '../frontend/src/assets/uploads/')
+        cb(null, 'https://hilarious-sfogliatella-c9ed00.netlify.app/')
     },
     filename: function (req, file, cb) {
         const generatename = Math.round(Math.random() * 1e9);
