@@ -17,6 +17,7 @@ const corsConfig={
     methods:["GET","POST","PUT","PATCH","DELETE","OPTIONS"]
 }
 app.use(express.json());
+app.use("/images",express.static('public'));
 app.options("",cors(corsConfig));
 app.use(cors(corsConfig));
 app.use(userRouter);
